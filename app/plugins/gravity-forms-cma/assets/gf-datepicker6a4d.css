@@ -1,0 +1,35 @@
+.ginput_appointment .qs-datepicker-container {
+    position: static;
+    order: 0;
+    flex: 1 1 100%;
+}
+
+.ginput_appointment .qs-overlay {
+    display: none;
+}
+
+.appointment_times_tomorrow, .appointment_times_future {
+    display: none;
+    order: 1;
+    flex: 1 1 100%;
+    column-count: 2;
+}
+
+.ginput_appointment_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 767px) {
+    .ginput_appointment .qs-datepicker-container {
+        flex: 0 1 50%;
+    }
+
+    .appointment_times_tomorrow, .appointment_times_future {
+        flex: 0 1 50%;
+    }
+}
+
+.appointment_success {
+    display: none;
+}
